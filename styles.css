@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4abcdb;
+}
+
+.navbar .logo img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 35px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-celular {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+.linha h1,
+.linha h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: #4abcdb 2px solid;
+}
+
+.linha .btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10%;
+}
+
+.linha .btns a {
+    background: #4abcdb;
+    color: #ffff;
+    text-decoration: none;
+    padding: 1rem 5rem 1rem;
+    border-radius: 4rem;
+    margin: 1% 10px;
+}
+
+.linha .btns a:hover {
+    border-color: #333;
+    transform: scale(1.04);
+    box-shadow: 0 0 3rem #4abcdb;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.linha .btns i {
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.linha .btns p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .menu-celular {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+
+    .linha {
+        flex-direction: column;
+    }
+
+    .linha .conteudo {
+        padding: 5px;
+    }
+
+    .linha h1 {
+        font-size: 1.5rem;
+        margin: 20% 0 5%;
+    }
+
+
+    .linha .btns {
+        flex-direction: column;
+    }
+
+    .linha .btns a {
+        padding: 1rem 5rem 2rem;
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 100%;
+        /* Ajusta o tamanho para telas ainda menores */
+    }
+}
