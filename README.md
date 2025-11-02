@@ -64,7 +64,7 @@ A aplicação é composta por quatro páginas principais:
 
 📬 Contato
 
-💻 Desenvolvedor Full-Stack Freelancer
+💻 Desenvolvedor Full-Stack Freelancer <br>
 📧 E-mail: viniciussaafe@gmail.com
 
 🌐 Portfólio: https://viniciussaafe.netlify.app/
